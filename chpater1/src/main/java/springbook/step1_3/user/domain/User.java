@@ -1,4 +1,4 @@
-package springbook.user.domain;
+package springbook.step1_3.user.domain;
 
 public class User {
     String id;

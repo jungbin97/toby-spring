@@ -1,9 +1,9 @@
-package springbook;
+package springbook.step1_3;
 
-import springbook.user.dao.ConnectionMaker;
-import springbook.user.dao.DConnectionMaker;
-import springbook.user.dao.UserDao;
-import springbook.user.domain.User;
+import springbook.step1_3.user.dao.ConnectionMaker;
+import springbook.step1_3.user.dao.DConnectionMaker;
+import springbook.step1_3.user.dao.UserDao;
+import springbook.step1_3.user.domain.User;
 
 import java.sql.SQLException;
 

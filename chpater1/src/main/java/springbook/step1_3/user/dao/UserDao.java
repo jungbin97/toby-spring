@@ -1,7 +1,7 @@
-package springbook.user.dao;
+package springbook.step1_3.user.dao;
 
 
-import springbook.user.domain.User;
+import springbook.step1_3.user.domain.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
