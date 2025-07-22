@@ -1,6 +1,6 @@
 package springbook.step1_3;
 
-import springbook.step1_3.user.dao.ConnectionMaker;
+import springbook.step1_3.user.dao.DataSource;
 import springbook.step1_3.user.dao.DConnectionMaker;
 import springbook.step1_3.user.dao.UserDao;
 import springbook.step1_3.user.domain.User;
@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 public class Main {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        ConnectionMaker connectionMaker = new DConnectionMaker();
+        DataSource connectionMaker = new DConnectionMaker();
         UserDao dao = new UserDao(connectionMaker);
 
         User user = new User();

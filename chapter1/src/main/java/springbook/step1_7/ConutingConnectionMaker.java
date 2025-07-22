@@ -1,15 +1,15 @@
 package springbook.step1_7;
 
-import springbook.step1_3.user.dao.ConnectionMaker;
+import springbook.step1_3.user.dao.DataSource;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class ConutingConnectionMaker implements ConnectionMaker {
+public class ConutingConnectionMaker implements DataSource {
     int counter = 0;
-    private ConnectionMaker realConnectionMaker;
+    private DataSource realConnectionMaker;
 
-    public ConutingConnectionMaker(ConnectionMaker realConnectionMaker) {
+    public ConutingConnectionMaker(DataSource realConnectionMaker) {
         this.realConnectionMaker = realConnectionMaker;
     }
 

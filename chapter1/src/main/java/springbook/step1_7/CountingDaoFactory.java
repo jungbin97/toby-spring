@@ -2,7 +2,7 @@ package springbook.step1_7;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import springbook.step1_3.user.dao.ConnectionMaker;
+import springbook.step1_3.user.dao.DataSource;
 import springbook.step1_3.user.dao.DConnectionMaker;
 import springbook.step1_3.user.dao.UserDao;
 
@@ -14,12 +14,12 @@ public class CountingDaoFactory {
     }
 
     @Bean
-    public ConnectionMaker connectionMaker() {
+    public DataSource connectionMaker() {
         return new ConutingConnectionMaker(realConnectionMaker());
     }
 
     @Bean
-    public ConnectionMaker realConnectionMaker() {
+    public DataSource realConnectionMaker() {
         return new DConnectionMaker();
     }
 }
